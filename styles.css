@@ -1,0 +1,256 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #222;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .hero {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #444;
+    height: 100vh; /* Set initial height to 100% viewport height */
+    transition: height 0.5s ease; /* Add a smooth transition effect */
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio {
+    padding: 100px 0;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff0066;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .portfolio {
+    padding: 100px 0;
+    background-color: #222; /* Dark background color for portfolio section */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    padding: 0 20px; /* Add horizontal padding */
+  }
+  
+  .project {
+    position: relative; /* Add this to set the context for absolute positioning */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+  }
+  
+
+  .project:hover {
+    transform: translateY(-5px); /* Apply a slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .project img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 16px;
+  }
+
+  .language-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .project .language-icon {
+    display: none; /* Hide the icon by default */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .project:hover {
+    transform: translateY(-5px); /* Apply a slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+
+  .project:hover .language-icon {
+    opacity: 1;
+    display: block; /* Show the icon on hover */
+  }
+
+/* Center the about section content */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+}
+
+.portrait {
+  position: relative;
+  text-align: center;
+  overflow: hidden; /* Hide overflow to achieve rounded shape */
+  width: 200px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  border-radius: 50%; /* Initial rounded shape */
+  transition: border-radius 0.3s ease; /* Add transition effect for shape change */
+}
+
+.portrait:hover {
+  border-radius: 10px; /* Slightly rounded corners on hover */
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.linkedin-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0077B5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-button a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedin-button i {
+  margin-right: 8px;
+}
+
+/* Remove link highlighting */
+a {
+  text-decoration: none;
+  color: #fff;
+  outline: none; /* Remove focus outline */
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  text-decoration: none;
+}
+  
+  /* Apply fade-out effect */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
